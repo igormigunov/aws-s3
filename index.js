@@ -1,1 +1,1 @@
-module.exports = require('./lib/S3Client');
+module.exports = require('./src/S3Client');
