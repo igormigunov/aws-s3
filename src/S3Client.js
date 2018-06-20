@@ -37,7 +37,7 @@ var S3Client =  {
           if (!data.ok) return Promise.reject(data);
           return Promise.resolve({
               bucket: config.bucketName,
-              key: config.dirName ? config.dirName + "/" : "",
+              key: config.dirName ? config.dirName + "/" + file.name : "" + file.name,
               location: url + config.dirName ? config.dirName + "/" : "" + file.name,
               result: data
           });
